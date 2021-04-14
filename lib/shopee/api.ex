@@ -30,7 +30,7 @@ defmodule Shopee.Api do
 
       shop_detailid = conn.params["shop_detailid"]
 
-      result = Http.gets("http://104.131.33.149:7000/products/#{shop_detailid}")
+      result = Http.gets("http://104.236.203.139:3000/products/#{shop_detailid}")
 
       json(conn, Poison.decode!(result))
     end
